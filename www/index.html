@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="phonegap.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+
+    <title>Camera</title>
+</head>
+<body>
+	<div>
+		Email: <input type="text" id="email" name="email" />
+	</div>
+	<div>
+    	<button onclick="SnapPictureAndSave();">開啟照相機拍照Enable camera(存檔本機save local)</button>
+    </div>
+    <div>
+		<button onclick="SnapPictureAndUpload();">開啟照相機拍照Enable camera(存檔遠端save remote)</button>
+	</div>
+	<div>
+		<button onclick="getPhoto();">從相簿讀取照片get from album(save remote)</button>
+	</div>
+	<img id="SnapImage" src="" style="width:200px;height:350px;" />n
+	<img id="AdjustImage" src="" style="width:200px;"/>
+</body>
+</html>
